@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/sider_types",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Shared domain types for Sider — AI assistance for generic web apps.",
   "license": "BUSL-1.1",
   "publishConfig": {
@@ -14,7 +14,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/fix-esm-imports.mjs",
     "typecheck": "tsc --noEmit",
     "test:unit": "bun test"
   },
